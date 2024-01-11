@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* main bg-color rgb(90,255,128); */
+/* secondary bg-color rgb(2,255,85) */
+/* hover  rgb(78, 233, 114) */
+/* rgb(31,31,31) */
+
+.mybtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  /* background-image: linear-gradient(to right, #3498db 50%, #fff 50%); */
+  background-color:#3498db ;
+  background-position: 200%;
+  background-size: 200% 100%;
+  color: #fff;
+  transition: background-position 0.5s ease-in-out;
+
+}
+.mybtn:hover {
+  background-position: 0;
+} 
+/* 8140054232 */
