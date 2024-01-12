@@ -8,31 +8,30 @@ function Hambourger() {
     setIsOpen(!isOpen);
   }
   return (
-    <div className="bg-red-500 h-8 min-w-fit relative" onClick={handeToggle}>
-            <div className="flex gap-1 text-xl font-medium">
-            <p>Menu</p>
-            <img src={hambourgerIcon} alt="" />
-            </div>
+    <div className="bg-[rgb(76,76,76)] h-14 relative text-white lg:hidden" onClick={handeToggle}>
+      <div className="text-xl font-bold py-1 px-2 rounded flex align-middle bg-black absolute right-3 top-[50%] -translate-y-[50%]">
+        <p>Menu</p>
+        <img src={hambourgerIcon} alt="" className="w-7"/>
+      </div>
 
-            {isOpen && (
-            <nav className="bg-blue-800 z-50 ">
-                <ul>
-                <li>
-                    <a href="">Home</a>
-                </li>
-                <li>
-                    <a href="">About</a>
-                </li>
-                <li>
-                    <a href="">Portfolio</a>
-                </li>
-                <li>
-                    <a href="">Contact</a>
-                </li>
-                </ul>
-            </nav>
-            )}
-     
+      {isOpen && (
+        <nav className="bg-[rgb(76,76,76)]">
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Portfolio</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      )}
     </div>
   );
 }

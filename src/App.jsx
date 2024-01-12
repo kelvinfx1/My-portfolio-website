@@ -5,7 +5,6 @@ import About from './components/home/About'
 import Experience from './components/home/Experience'
 import Footer from './components/home/Footer'
 import Portfolio from './components/home/Portfolio'
-import Hambourger from './components/Hambourger'
 
 
 function App() {
@@ -13,12 +12,11 @@ function App() {
   return (
     <section>
       <Header />
-      <Hambourger />
       <Hero />
       <About />
-      <Experience />
+      {/*<Experience />
       <Portfolio />
-      <Footer />
+      <Footer /> */}
      
     </section>
   )
