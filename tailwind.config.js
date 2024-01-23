@@ -21,8 +21,25 @@ export default {
 
       '2xl': '1300px',
       //1400px => ...
+
+      '3xl': '1500px',
+      //1400px => ...
+
+      '4xl': '2500px',
+      //1400px => ...
     },
-    extend: {},
+   
+    extend: {
+      colors: {
+        'mainBgColor':  '#5aff80',
+        'secondaryBgColor': '#02ff55',
+        'hoverColor': '#4ee972',
+        'hambourger': '#4c4c4c',
+        'borderColor': '#9ca3af'
+  
+      },
+     
+    },
   },
   plugins: [require("daisyui")],
 }

@@ -1,47 +1,47 @@
 import React from "react";
 
 function Experience() {
+  // pb-20 sm:px-9
   return (
-    <section className="py-12 px-3 md:py-28 md:px-10 lg:px-24 xl:xl:px-36 relative bg-yellow-300">
+    <section className="" id="experience">
+      <div className="container mx-auto px-6 py-28">
+        {/* <p className="">Experience</p> */}
 
-      <p className="text-8xl text-gray-400 font-bold italic opacity-5 absolute top-96 -left-40 rotate-90">Experience</p>
+        <p className="text-4xl pb-10 md:text-5xl">
+          <span className="text-mainBgColor">02. </span>Experience
+        </p>
 
-      <p className="text-5xl md:text-6xl mb-12">Experience</p>
-
-      <div className="px-3 md:px-5 lg:px-16">
-            <div className="border-t-[1px] py-7">
-            <p className="text-2xl">Software Engineer(contract)</p>
-            <p className="text-xl my-3 bg-[rgb(2,255,85)] inline-block p-1 text-black">
-                March 2020 - Present
-            </p>
-            <ul className="text-xl">
-                <li>
+        <div className="lg:px-48">
+          <div className="border-t-[0.5px] border-borderColor py-4 lg:py-10">
+            <p className="text-xl sm:text-2xl">Software Engineer(contract)</p>
+            <p className="py-4 text-xl">March 2020 - Present</p>
+            <ul className="">
+              <li>
                 Part time Code instructor and mentorship program at the software
                 training academy
-                </li>
-                <li>
+              </li>
+              <li>
                 Part time Code instructor and mentorship program at the software
                 training academy
-                </li>
+              </li>
             </ul>
-            </div>
+          </div>
 
-            <div className="border-t-[1px] border-b-[1px] py-7">
-            <p className="text-2xl">Software Engineer(contract)</p>
-            <p className="text-xl my-3 bg-[rgb(2,255,85)] inline-block p-1 text-black">
-                March 2020 - Present
-            </p>
-            <ul className="text-xl">
-                <li>
+          <div className="border-t-[0.5px]  border-b-[1px] border-borderColor py-4 lg:py-10">
+            <p className="text-xl sm:text-2xl">Software Engineer(contract)</p>
+            <p className="py-4 text-xl">March 2020 - Present</p>
+            <ul className="">
+              <li>
                 Part time Code instructor and mentorship program at the software
                 training academy
-                </li>
-                <li>
+              </li>
+              <li>
                 Part time Code instructor and mentorship program at the software
                 training academy
-                </li>
+              </li>
             </ul>
-            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

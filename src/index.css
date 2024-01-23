@@ -7,24 +7,136 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  --main-font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+/* .container {
+  width: 100%;
+  margin: 0 auto OR custom;
+  padding: custom;
+  box-sizing: border-box
+} */
 
 /* main bg-color rgb(90,255,128); */
 /* secondary bg-color rgb(2,255,85) */
 /* hover  rgb(78, 233, 114) */
 /* rgb(31,31,31) */
 
-.mybtn {
-  padding: 10px 20px;
-  font-size: 16px;
-  /* background-image: linear-gradient(to right, #3498db 50%, #fff 50%); */
-  background-color:#3498db ;
-  background-position: 200%;
-  background-size: 200% 100%;
-  color: #fff;
-  transition: background-position 0.5s ease-in-out;
+.hero {
+  font-family:'Times New Roman', Times, serif ;
+}
+
+.right-anime {
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 
 }
-.mybtn:hover {
-  background-position: 0;
-} 
-/* 8140054232 */
+.left-anime {
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+}
+
+.buttom-anime {
+  animation-name: moveInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+}
+
+/* .container {
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .container {
+      max-width: 480px;
+  }
+}
+@media (min-width: 770px) {
+  .container {
+      max-width: 770px;
+  }
+}
+@media (min-width: 1020px) {
+  .container {
+      max-width: 1020px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1200px;
+  }
+}
+@media (min-width: 1300px) {
+  .container {
+      max-width: 1300px;
+  }
+} */
+
+
+@keyframes moveInLeft {
+  0% {
+      opacity: 0;
+      transform:  translateX(-100px);
+  }
+
+  80%{ 
+      transform: translate(10px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+
+}
+
+@keyframes moveInRight {
+  0% {
+      opacity: 0;
+      transform:  translateX(100px);
+  }
+
+  80%{ 
+      transform: translate(-10px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+
+}
+
+@keyframes moveInBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+.ex {
+  animation-name: animista;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+}
+ @keyframes animista {
+  0% {
+    transform: scale(1);
+  }
+  
+  80% {
+    transform: scale(5)
+
+  }
+  100% {
+    transform: scale(0)
+  }
+ }

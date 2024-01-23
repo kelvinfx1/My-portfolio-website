@@ -15,7 +15,7 @@ function Hambourger() {
       </div>
 
       {isOpen && (
-        <nav className="bg-[rgb(76,76,76)]">
+        <nav className="bg-[#4c4c4c]">
           <ul>
             <li>
               <a href="">Home</a>

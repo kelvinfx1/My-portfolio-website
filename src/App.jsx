@@ -10,13 +10,13 @@ import Portfolio from './components/home/Portfolio'
 function App() {
 
   return (
-    <section>
+    <section className='w-ful'>
       <Header />
       <Hero />
       <About />
-      {/*<Experience />
-      <Portfolio />
-      <Footer /> */}
+      <Experience />
+      {/* <Portfolio /> */}
+      <Footer />
      
     </section>
   )
