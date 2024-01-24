@@ -33,10 +33,10 @@ function Footer() {
 
         <div className="pt-3">
           <ul className="flex gap-3">
-            <li><a href=""><img src={linkedin} alt="" /></a></li>
+            <li><a href="www.linkedin.com/in/ezewi-osorachukwu"><img src={linkedin} alt="" /></a></li>
             <li><a href=""><img src={whatsapp} alt="" /></a></li>
-            <li><a href=""><img src={tele} alt="" /></a></li>
-            <li><a href=""><img src={github} alt="" /></a></li>
+            <li><a href="08100298300" type="tele"><img src={tele} alt="" /></a></li>
+            <li><a href="https://github.com/Osorachukwu"><img src={github} alt="" /></a></li>
           </ul>
         </div>
 

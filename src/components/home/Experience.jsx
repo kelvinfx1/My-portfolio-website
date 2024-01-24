@@ -14,30 +14,30 @@ function Experience() {
         <div className="lg:px-48">
           <div className="border-t-[0.5px] border-borderColor py-4 lg:py-10">
             <p className="text-xl sm:text-2xl">Software Engineer(contract)</p>
-            <p className="py-4 text-xl">March 2020 - Present</p>
+            <p className="py-4 text-xl">October 2020 - Present</p>
             <ul className="">
               <li>
                 Part time Code instructor and mentorship program at the software
                 training academy
               </li>
               <li>
-                Part time Code instructor and mentorship program at the software
-                training academy
+                Worked with a development team design and build one of the companies websites 
               </li>
             </ul>
           </div>
 
           <div className="border-t-[0.5px]  border-b-[1px] border-borderColor py-4 lg:py-10">
-            <p className="text-xl sm:text-2xl">Software Engineer(contract)</p>
-            <p className="py-4 text-xl">March 2020 - Present</p>
+            <p className="text-xl sm:text-2xl">UI Intern</p>
+            <p className="py-4 text-xl">June 2019 - December 2020</p>
             <ul className="">
               <li>
-                Part time Code instructor and mentorship program at the software
-                training academy
+                Design low and high-fidelity prototypes for a series of web and
+                mobile App projects.
               </li>
+
               <li>
-                Part time Code instructor and mentorship program at the software
-                training academy
+                Successfully executed user research processes for implementation
+                in the design strategy.
               </li>
             </ul>
           </div>
