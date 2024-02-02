@@ -1,38 +1,46 @@
 import React, { useState } from "react";
-import hambourgerIcon from "../assets/hambourgerOne.svg";
+// import hambourgerIcon from "../assets/icons/hambourgerOne.svg";
+import hambourgerIcon from "../assets/icons/hambourgerTwo.svg";
+// import hambourgerIcon from "../assets/icons/hambourgerAnime.svg";
 
 function Hambourger() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  function handeToggle() {
-    setIsOpen(!isOpen);
-  }
   return (
-    <div className="bg-[rgb(76,76,76)] h-14 relative text-white lg:hidden" onClick={handeToggle}>
-      <div className="text-xl font-bold py-1 px-2 rounded flex align-middle bg-black absolute right-3 top-[50%] -translate-y-[50%]">
-        <p>Menu</p>
-        <img src={hambourgerIcon} alt="" className="w-7"/>
-      </div>
-
-      {isOpen && (
-        <nav className="bg-[#4c4c4c]">
-          <ul>
-            <li>
-              <a href="">Home</a>
+    <section className="bg-textMedium py-1 grid justify-end lg:hidden px-5">
+      <div className="drawer">
+        <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+        <div className="drawer-content">
+          {/* Page content here */}
+          <label htmlFor="my-drawer" className="btn btn-primary drawer-button rounded-sm bg-textLight border-none text-white">
+            <img src={hambourgerIcon} alt="" />
+          </label>
+        </div>
+        <div className="drawer-side">
+          <label
+            htmlFor="my-drawer"
+            aria-label="close sidebar"
+            className="drawer-overlay"
+          ></label>
+          <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+            {/* Sidebar content here */}
+            <li className="font-medium text-2xl text-textMedium">
+              <a> Osora. </a>
             </li>
             <li>
-              <a href="">About</a>
+              <a>Home</a>
             </li>
             <li>
-              <a href="">Portfolio</a>
+              <a>About</a>
             </li>
             <li>
-              <a href="">Contact</a>
+              <a>Experience</a>
+            </li>
+            <li>
+              <a>Portfolio</a>
             </li>
           </ul>
-        </nav>
-      )}
-    </div>
+        </div>
+      </div>
+    </section>
   );
 }
 

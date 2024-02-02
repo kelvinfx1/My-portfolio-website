@@ -5,7 +5,7 @@ import Hambourger from "../Hambourger";
 
 function Header() {
   return (
-    <section className="bg-mainBgColor border border-b-borderColor lg:h-20 xl:h-24 sticky w-full top-0">
+    <section className="bg-white border border-b-borderColor z-40 lg:h-20 xl:h-24 sticky w-full top-0" id="home">
       <div className=" lg:flex lg:justify-between lg:px-24 lg:h-full lg:py-0 xl:px-20">
         <Logo />
         <Nav />

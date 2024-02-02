@@ -1,65 +1,100 @@
-import React from "react";
-import myPhoto from "../../assets/osora-pressing-2.jpg";
+import React, { useEffect } from "react";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function About() {
-  // px-4
+  useEffect(()=> {
+    AOS.init({ duration: 600 });
+   }, []);
+
   return (
-    <section className="" id="about">
-      <div className="container mx-auto px-4 py-28 font-medium md:flex">
-        {/* <p className="text-8xl text-gray-400 font-bold italic opacity-5 absolute top-60 -left-20 rotate-90">About</p> */}
-
-        {/* 👇first column👇 */}
-        <div className="md:w-[50%]">
-          <div>
-            <div className="flex justify-between items-center gap-3 md:pb-4">
-              <p className="text-mainBgColor text-xl md:text-3xl font-medium py-3 inline-block whitespace-nowrap">
-                <span>01. </span>About me
-              </p>
-              <div className="h-[0.5px] bg-borderColor w-full "></div>
-            </div>
-
-            <p className="">
+    <section
+      className="text-center flex justify-center py-36 md:py-28 bg-altBg"
+      id="about"
+     
+    >
+      <div className=" bg-white shadow-lg px-2 xl:px-20 rounded-md max-w-[93%] sm:w-[90%] md:max-w-[85%] lg:max-w-[80%] 2xl:max-w-[68%]">
+        <div className="px-3 pt-12 sm:px-9 md:px-16">
+          <div data-aos = "fade-up">
+            <p className="text-xl text-textMedium font-semibold"> ABOUT MYSELF</p>
+            <p className="py-5 text-2xl font-normal md:text-3xl lg:5xl">
               Hello! Thank you once again for making out time to visit my
               personal portfolio. My name is Ezewi Osorachukwu, I&#39;m a very
               dedicated and astute software engineer with the ambition for
-              mental and moral distinction. I&#39;m out to invest in an enduring
-              software career and to seek self-development, advancement and
-              improvement while enjoying job satisfaction. Well proven in, with
-              the precision and loyalty required to excel.
+              mental and moral distinction.
             </p>
-            <p className="py-2 inline-block md:py-4">
-              My core area of Focus is on HTML 5, CSS, Tailwind, JavaScript &
-              React.
-            </p>
-            <p className="py-2 inline-block md:py-4">
-              Below is a list of technologies, languages, frameworks and
-              Libraries that I have a good command of:
-            </p>
+            <a
+              href=""
+              className="btn btn-lg rounded-none bg-textLight text-white hover:bg-white hover:text-textLight hover:border-textLight"
+            >
+              Download resume
+            </a>
           </div>
-
-          <ul className="list-img font-medium grid grid-cols-2 gap-1 pb-10">
-            <li>HTML 5</li>
-            <li>CSS 3</li>
-            <li>Tailwind</li>
-            <li>SCSS</li>
-            <li>JavaScript</li>
-            <li>Typescript</li>
-            <li>React</li>
-            <li>Redux</li>
-            {/* <li>Next JS</li> */}
-          </ul>
         </div>
 
-        {/* 👇second column👇 */}
-        <div className="flex justify-center items-center md:w-[50%]">
-          <div className="">
-            {/* border thing */}
-            <img src={myPhoto} alt="" className="rounded-2xl w-96" />
-            {/* <div className="border-[1px] border-[rgb(2,255,85)] h-80 w-60 rounded-lg absolute top-12 -right-16"></div> */}
+        <div className="h-[1px] bg-textMedium my-10"></div>
+        {/* ☝Dividing line */}
+
+        <div className="text-xl font-normal px-5 pb-12 grid grid-cols-1 gap-8 sm:px-9 md:px-10 md:grid-cols-2"  data-aos = "fade-up">
+          <div>
+            <p className="text-start font-medium">Figma</p>
+            <div className="rounded-xl bg-textMedium mt-3">
+              <div className="bg-textLight w-[60%] py-1 rounded-xl"></div>
+            </div>
+          </div>
+
+          <div>
+            <p className="text-start font-medium">HTML</p>
+            <div className="rounded-xl bg-textMedium mt-2">
+              <div className="bg-textLight w-[96%] py-1 rounded-xl"></div>
+            </div>
+          </div>
+
+          <div>
+            <p className="text-start font-medium">CSS</p>
+            <div className="rounded-xl bg-textMedium mt-2">
+              <div className="bg-textLight w-[90%] py-1 rounded-xl"></div>
+            </div>
+          </div>
+
+          <div>
+            <p className="text-start font-medium">Tailwind</p>
+            <div className="rounded-xl bg-textMedium mt-2">
+              <div className="bg-textLight w-[80%] py-1 rounded-xl"></div>
+            </div>
+          </div>
+
+          <div>
+            <p className="text-start font-medium">SCSS</p>
+            <div className="rounded-xl bg-textMedium mt-2">
+              <div className="bg-textLight w-[75%] py-1 rounded-xl"></div>
+            </div>
+          </div>
+
+          <div>
+            <p className="text-start font-medium">Javascript</p>
+            <div className="rounded-xl bg-textMedium mt-2">
+              <div className="bg-textLight w-[75%] py-1 rounded-xl"></div>
+            </div>
+          </div>
+
+          <div>
+            <p className="text-start font-medium">Typscript</p>
+            <div className="rounded-xl bg-textMedium mt-2">
+              <div className="bg-textLight w-[55%] py-1 rounded-xl"></div>
+            </div>
+          </div>
+
+          <div>
+            <p className="text-start font-medium">React.js</p>
+            <div className="rounded-xl bg-textMedium mt-2">
+              <div className="bg-textLight w-[75%] py-1 rounded-xl"></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+   
   );
 }
 // h-[80%] w-[60%]

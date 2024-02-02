@@ -35,7 +35,13 @@ export default {
         'secondaryBgColor': '#02ff55',
         'hoverColor': '#4ee972',
         'hambourger': '#4c4c4c',
-        'borderColor': '#9ca3af'
+        'borderColor': '#9ca3af',
+        'progressBarBg': '#e5ffee',
+        'altBg': '#fafbfd',
+        'altBgMedium': '#d9d9d9',
+        'textMedium': '#130846',
+        'textLight': '#7561d9'
+        
   
       },
      

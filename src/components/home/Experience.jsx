@@ -1,48 +1,60 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function Experience() {
-  // pb-20 sm:px-9
+
+  useEffect(()=> {
+    AOS.init({ duration: 600 });
+   }, []);
+
+  const experienceData = [
+    {
+      title: "Software Engineer(contract)",
+      pow: "Innovatespace",
+      duration: "October 2020 - Present",
+      'description-one': "  Part time Code instructor and mentorship program at the software training academy ",
+      'description-two': "  Part time Code instructor and mentorship program at the software training academy ",
+    },
+
+    {
+      title: "Software Engineer(contract)",
+      pow: "Innovatespace",
+      duration: "October 2020 - Present",
+      'description-one': "  Part time Code instructor and mentorship program at the software training academy ",
+      'description-two': "  Part time Code instructor and mentorship program at the software training academy ",
+    },
+  ];
   return (
-    <section className="" id="experience">
+    <section className="text-textMedium" id="experience">
       <div className="container mx-auto px-6 py-28">
         {/* <p className="">Experience</p> */}
 
         <p className="text-4xl pb-10 md:text-5xl">
-          <span className="text-mainBgColor">02. </span>Experience
+          Experience
         </p>
 
-        <div className="lg:px-48">
-          <div className="border-t-[0.5px] border-borderColor py-4 lg:py-10">
-            <p className="text-xl sm:text-2xl">Software Engineer(contract)</p>
-            <p className="py-4 text-xl">October 2020 - Present</p>
-            <ul className="">
-              <li>
-                Part time Code instructor and mentorship program at the software
-                training academy
-              </li>
-              <li>
-                Worked with a development team design and build one of the companies websites 
-              </li>
-            </ul>
-          </div>
-
-          <div className="border-t-[0.5px]  border-b-[1px] border-borderColor py-4 lg:py-10">
-            <p className="text-xl sm:text-2xl">UI Intern</p>
-            <p className="py-4 text-xl">June 2019 - December 2020</p>
-            <ul className="">
-              <li>
-                Design low and high-fidelity prototypes for a series of web and
-                mobile App projects.
-              </li>
-
-              <li>
-                Successfully executed user research processes for implementation
-                in the design strategy.
-              </li>
-            </ul>
-          </div>
+        <div className="lg:px-48" data-aos = "fade-right">
+          {experienceData.map((experience, index) => (
+            <div key={index} className="border-t-[0.2px] border-textMedium py-5 lg:py-10">
+              <div>
+                <p className="sm:text-2xl">{experience.title}</p>
+                <p className="text-end text-sm md:text-lg" style={{lineHeight: "0"}}>{`@${experience.pow}`}</p>
+                <p className="py-4 text-textLight text-lg">{experience.duration}</p>
+              </div>
+              <ul>
+                <li className="mb-3">{experience["description-one"]}</li>
+                <li>{experience["description-two"]}</li>
+                {/* ☝the square brackets is cos I wrapped the keys in qoutes */}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
+      {/* <div className="text-base ">
+              <p className="text-end"> <a href="" className="hover:text-mainBgColor text-xl "> <span className="text-black font-medium text-2xl">@</span>Innovatespace</a></p>
+          </div>*/}
+
     </section>
   );
 }
