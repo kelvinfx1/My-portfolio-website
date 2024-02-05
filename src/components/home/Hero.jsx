@@ -15,11 +15,11 @@ function Hero() {
     <section className="lg:h-[80vh] xl:h-[90vh] relative">
       <div className="container mx-auto px-4 md:flex h-full">
         {/* First column 👇*/}
-        <div className="flex flex-col justify-end py-10 lg:justify-center xl:justify-end xl:pb-20 md:w-[50%] lg:pl-24 md:font-medium">
+        <div className="flex flex-col justify-end pt-24 lg:justify-center xl:justify-end xl:pb-20 md:w-[50%] lg:pl-24 md:font-medium">
           {/* Texts container 👇*/}
           <div className="left-anime text-textMedium">
             <p className="text-textLight">Hi, my name</p>
-            <p className="text-5xl my-5 md:text-6xl">
+            <p className="font-medium text-5xl my-5 md:text-6xl">
               Osorachukwu <br />
               Ezewi{" "}
             </p>
@@ -40,7 +40,7 @@ function Hero() {
           <img src={myPhoto} alt="" className="h-full hover:grayscale" />
         </div>
 
-        <div className=" absolute bottom-0 right-6 hidden md:block">
+        <div className="absolute bottom-0 right-6 hidden md:block">
           <img src={dottedBg} alt="" className="w-96 "/>
          
       

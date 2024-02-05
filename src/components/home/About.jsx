@@ -10,7 +10,7 @@ function About() {
 
   return (
     <section
-      className="text-center flex justify-center py-36 md:py-28 bg-altBg z-10"
+      className="text-center flex justify-center py-20 md:py-28 bg-altBg z-10"
       id="about"
      
     >
