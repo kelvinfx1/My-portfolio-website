@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
+
 function About() {
   useEffect(()=> {
     AOS.init({ duration: 600 });
@@ -9,7 +10,7 @@ function About() {
 
   return (
     <section
-      className="text-center flex justify-center py-36 md:py-28 bg-altBg"
+      className="text-center flex justify-center py-36 md:py-28 bg-altBg z-10"
       id="about"
      
     >
@@ -32,67 +33,68 @@ function About() {
           </div>
         </div>
 
-        <div className="h-[1px] bg-textMedium my-10"></div>
+        <div className="h-[1px] bg-altBgMedium my-10"></div>
         {/* ☝Dividing line */}
 
         <div className="text-xl font-normal px-5 pb-12 grid grid-cols-1 gap-8 sm:px-9 md:px-10 md:grid-cols-2"  data-aos = "fade-up">
           <div>
             <p className="text-start font-medium">Figma</p>
-            <div className="rounded-xl bg-textMedium mt-3">
+            <div className="rounded-xl bg-altBgMedium mt-3">
               <div className="bg-textLight w-[60%] py-1 rounded-xl"></div>
             </div>
           </div>
 
           <div>
             <p className="text-start font-medium">HTML</p>
-            <div className="rounded-xl bg-textMedium mt-2">
+            <div className="rounded-xl bg-altBgMedium mt-2">
               <div className="bg-textLight w-[96%] py-1 rounded-xl"></div>
             </div>
           </div>
 
           <div>
             <p className="text-start font-medium">CSS</p>
-            <div className="rounded-xl bg-textMedium mt-2">
+            <div className="rounded-xl bg-altBgMedium mt-2">
               <div className="bg-textLight w-[90%] py-1 rounded-xl"></div>
             </div>
           </div>
 
           <div>
             <p className="text-start font-medium">Tailwind</p>
-            <div className="rounded-xl bg-textMedium mt-2">
+            <div className="rounded-xl bg-altBgMedium mt-2">
               <div className="bg-textLight w-[80%] py-1 rounded-xl"></div>
             </div>
           </div>
 
           <div>
             <p className="text-start font-medium">SCSS</p>
-            <div className="rounded-xl bg-textMedium mt-2">
+            <div className="rounded-xl bg-altBgMedium mt-2">
               <div className="bg-textLight w-[75%] py-1 rounded-xl"></div>
             </div>
           </div>
 
           <div>
             <p className="text-start font-medium">Javascript</p>
-            <div className="rounded-xl bg-textMedium mt-2">
+            <div className="rounded-xl bg-altBgMedium mt-2">
               <div className="bg-textLight w-[75%] py-1 rounded-xl"></div>
             </div>
           </div>
 
           <div>
             <p className="text-start font-medium">Typscript</p>
-            <div className="rounded-xl bg-textMedium mt-2">
+            <div className="rounded-xl bg-altBgMedium mt-2">
               <div className="bg-textLight w-[55%] py-1 rounded-xl"></div>
             </div>
           </div>
 
           <div>
             <p className="text-start font-medium">React.js</p>
-            <div className="rounded-xl bg-textMedium mt-2">
+            <div className="rounded-xl bg-altBgMedium mt-2">
               <div className="bg-textLight w-[75%] py-1 rounded-xl"></div>
             </div>
           </div>
         </div>
       </div>
+     
     </section>
    
   );

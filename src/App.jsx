@@ -13,8 +13,6 @@ import SpalshScreen from "./components/SpalshScreen";
 
 function App() {
   
-   
- 
   return (
     <>
       <section className="w-full bg-white overflow-x-hidden">
@@ -27,6 +25,9 @@ function App() {
         <MeCard />
         <Gallery />
         <Footer />
+
+       
+
       </section>
     </>
   );

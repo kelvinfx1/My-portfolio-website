@@ -19,42 +19,44 @@ do the back-to-top botton
       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
       XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
  
-import React, { useState } from "react";
-import hambourgerIcon from "../assets/hambourgerOne.svg";
-
-function Hambourger() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  function handeToggle() {
-    setIsOpen(!isOpen);
-  }
+ // lg:px-20 xl:px-36 px-4
   return (
-    <div className="bg-textMedium h-14 relative text-white lg:hidden" onClick={handeToggle}>
-      <div className="text-lg font-bold py-1 px-2 rounded flex align-middle bg-textLight absolute right-3 top-[50%] -translate-y-[50%]">
-        <p>Menu</p>
-        <img src={hambourgerIcon} alt="" className="w-6"/>
+    <section className="bg-white text-textLight hero relative">
+      <div className="container mx-auto px-6 pt-12 pb-32 lg:flex md:text-lg lg:text-xl lg:pl-28">
+        {/* <p className="">Osora.</p> */}
+
+         {/*👇hero column-1*/}
+        <div className="lg:w-[50%] lg:pt-36">
+          <div>
+            <p className="right-anime">Hi, my name is</p>
+            <p className="right-anime text-4xl text-textMedium font-semibold my-3 lg:text-7xl">
+              Osorachukwu <br />  Ezewi
+            </p>
+            <div className="mb-5">
+              <p className="left-anime">
+                I'm a Frontend Web Developer <br /> building Industry Leading Web
+                Solutions with next gen technologies.
+              </p>
+            </div>
+
+            <button className="buttom-anime text-textLight mt-5 btn text-xl font-normal rounded-none bg-inherit border-textLight h-14
+            px-20 md:btn-wide md:font-medium hover:text-white hover:bg-textLight lg:text-2xl">
+              Hire Me
+            </button>
+            {/*      border-[1px]   md:h-16 */}
+            {/* className="py-4 px-14 border-2 border-gray-500 text-xl font-bold overflow-hidden mybtn" */}
+          </div>
+        </div>
+
+        <div className="hidden w-full lg:block lg:w-[50%]">
+          {/*hero column-2*/}
+          <img src={myPhoto} alt="" className="w-[500px]"/>
+          {/* 💥💥💥‼❗❕ w-[500px] grayscale hover:grayscale-0*/}
+          {/* ☝☝☝this style is for when I add my photo */}
+        </div>
+
+        <div>
+          <img src={dottedBg} alt=""  className="absolute -top-20 -right-14 lg:hidden"/>
+        </div>
       </div>
-
-      {isOpen && (
-        <nav className="bg-[#4c4c4c] absolute mt-14 w-full opacity-70">
-          <ul className="flex flex-col gap-8">
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="">About</a>
-            </li>
-            <li>
-              <a href="">Portfolio</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      )}
-    </div>
-  );
-}
-
-export default Hambourger;
+    </section>

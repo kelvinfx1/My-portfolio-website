@@ -6,7 +6,7 @@ function SpalshScreen() {
   useEffect(() => {
     setTimeout(() => {
       setshowSplash(false);
-    }, 3000);
+    }, 2000);
   }, []);
 
   return (
