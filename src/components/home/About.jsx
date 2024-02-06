@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import resume from '../../assets/docs/osorachukwu-ezewi-cv.pdf'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -10,25 +11,30 @@ function About() {
 
   return (
     <section
-      className="text-center flex justify-center py-20 md:py-28 bg-altBg z-10"
+      className="text-center flex justify-center py-20 md:py-28 bg-altBg z-10 relative"
       id="about"
      
     >
+      {/* Floating text 👇*/}
+       <p className="hidden lg:block absolute top-32 -left-14 rotate-90 text-7xl font-semibold italic opacity-5">About</p>
+      {/* Floating text ☝*/}
+
       <div className=" bg-white shadow-lg px-2 xl:px-20 rounded-md max-w-[93%] sm:w-[90%] md:max-w-[85%] lg:max-w-[80%] 2xl:max-w-[68%]">
         <div className="px-3 pt-12 sm:px-9 md:px-16">
-          <div data-aos = "fade-up">
-            <p className="text-xl text-textMedium font-semibold"> ABOUT MYSELF</p>
-            <p className="py-5 text-2xl font-normal md:text-3xl lg:5xl">
+          <div>
+            <p className="text-xl text-textMedium font-semibold underline"> ABOUT MYSELF</p>
+            <p className="py-5 text-2xl font-normal md:text-3xl lg:5xl" data-aos="fade-up">
               Hello! Thank you once again for making out time to visit my
               personal portfolio. My name is Ezewi Osorachukwu, I&#39;m a very
               dedicated and astute software engineer with the ambition for
               mental and moral distinction.
             </p>
             <a
-              href=""
-              className="btn btn-lg rounded-none bg-textLight text-white hover:bg-white hover:text-textLight hover:border-textLight"
+              href={resume} download={resume}
+              className="text-xl btn btn-lg btn-wide rounded-none bg-textLight text-white hover:bg-white hover:text-textLight hover:border-textLight"
+              data-aos="fade-up"
             >
-              Download resume
+              Hire Me
             </a>
           </div>
         </div>

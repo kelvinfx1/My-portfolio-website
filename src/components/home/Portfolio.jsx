@@ -12,6 +12,10 @@ useEffect(()=> {
 
   return (
     <section className="container mx-auto px-4 lg:relative mb-10 py-10 bg-altBg" id="portfolio">
+      {/* Floating text 👇*/}
+       <p className="hidden lg:block absolute top-80 -left-32 rotate-90 text-7xl font-semibold italic opacity-5 ">Portfolio</p>
+      {/* Floating text ☝*/}
+
       <p className="text-2xl text-textMedium my-10 md:text-4xl lg:font-medium">SOME THINGS I'VE BUILT</p>
 
       {/* the projects container👇 */}

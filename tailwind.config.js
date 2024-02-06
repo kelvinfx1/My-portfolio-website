@@ -41,7 +41,6 @@ export default {
         'altBgMedium': '#d9d9d9',
         'textMedium': '#130846',
         'textLight': '#7561d9'
-        
   
       },
      

@@ -15,7 +15,7 @@ function Gallery() {
   return (
     <section className='flex w-full justify-between gap-[2px] border-y-[2px] text-white'>
       {logos.map((logo, index)=> (
-        <div key={index} className='flex justify-center h-full w-full py-4 '>
+        <div key={index} className='flex justify-center h-full w-full'>
             <img src={logo} alt="tech-logos" className='w-[80%]' />
         </div>
         // h-full w-full flex justify-center items-center

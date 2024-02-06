@@ -18,7 +18,7 @@ function MeCard() {
         className="container mx-auto px-4 md:relative md:h-[70vh] bg-altBgMedium py-10 md:bg-white"
       >
         {/* First colum👇img */}
-        <div className="mb-8 mx-auto overflow-hidden flex justify-center md:absolute right-[8%] md:top-[50%] md:translate-y-[-50%] z-50 lg:right-[18%] xl:right-[23%] rounded-lg md:shadow-2xl">
+        <div className="mb-8 mx-auto overflow-hidden flex justify-center md:absolute right-[8%] md:top-[50%] md:translate-y-[-50%] z-50 lg:right-[18%] xl:right-[23%] rounded-lg md:shadow-2xl grayscale hover:grayscale-0">
           <img src={myPhoto} alt="" className="max-h-[400px] rounded-lg " />
         </div>
 

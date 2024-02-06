@@ -26,7 +26,11 @@ function Experience() {
     },
   ];
   return (
-    <section className="text-textMedium" id="experience">
+    <section className="text-textMedium relative" id="experience">
+      {/* Floating Text 👇 */}
+       <p className="hidden lg:block absolute top-[400px] -left-28 rotate-90 text-7xl font-semibold italic opacity-5">Experience</p>
+      {/* Floating Text ☝ */}
+
       <div className="container mx-auto px-6 py-28">
         {/* <p className="">Experience</p> */}
 
