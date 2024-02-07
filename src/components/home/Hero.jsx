@@ -45,10 +45,13 @@ function Hero() {
           <img src={myPhoto} alt="" className="h-full hover:grayscale" />
         </div>
 
+        {/*  👇Background noise */}
         <div className="hidden -z-0 h-full absolute bottom-0 right-1 lg:block">
-          <div className="bg-altBg hover:bg-[#e4e1f3] h-full w-[550px]">
+          <div className="bg-altBg hover:bg-[#e4e1f3] h-full w-[550px]"></div>
+        </div>
 
-          </div>
+        <div className="absolute w-20 bottom-80 left-[600px]">
+          <img src={dottedBg} alt="" className="animate-pulse"/>
         </div>
       </div>
     </section>
