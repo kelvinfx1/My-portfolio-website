@@ -53,7 +53,7 @@ function Portfolio() {
               <a href="">Next js</a>
               <a href="">Daisy ui</a>
             </div>
-            <div className="flex justify-end gap-10 ">
+            <div className="flex gap-5 pt-3 lg:justify-end lg:gap-10 ">
               <a href="https://osorachukwu.vercel.app/" target="_blank">
                 <img src={linkIcon} alt="" className="w-6" />
               </a>
@@ -89,7 +89,7 @@ function Portfolio() {
               <a href="">Daisy ui</a>
             </div>
 
-            <div className="flex justify-end gap-10">
+            <div className="flex gap-5 pt-3 lg:justify-end lg:gap-10">
               <a href="https://rest-countries-six-sigma.vercel.app/" target="_blank">
                 <img src={linkIcon} alt="" className="w-6" />
               </a>
