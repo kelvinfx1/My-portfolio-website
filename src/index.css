@@ -149,6 +149,50 @@ html, body {
  }
 
 
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* Infinite animation */
+/* .infinite-slide {
+  animation: loop 35s linear infinite;
+}
+
+.infinite-slide-parent:hover {
+  .infinite-slide {
+    animation-play-state: paused;
+  }
+}
+
+.infinite-slide-parent::before {
+  @apply sm:w-64 w-20;
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.infinite-slide-parent::after {
+  @apply sm:w-64 w-20;
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+@keyframes loop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+} */
+
+
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx */
 /* .carousel-container {
   width: 300px;

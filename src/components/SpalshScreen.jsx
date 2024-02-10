@@ -31,3 +31,5 @@ function SpalshScreen() {
 }
 
 export default SpalshScreen;
+
+{/* <span className="loading loading-ring loading-lg"></span> */}
