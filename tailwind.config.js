@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
   theme: {
     screens: {
       //0 => 480px
@@ -31,16 +32,16 @@ export default {
    
     extend: {
       colors: {
-        'mainBgColor':  '#5aff80',
-        'secondaryBgColor': '#02ff55',
-        'hoverColor': '#4ee972',
         'hambourger': '#4c4c4c',
         'borderColor': '#9ca3af',
         'progressBarBg': '#e5ffee',
         'altBg': '#fafbfd',
         'altBgMedium': '#d9d9d9',
         'textMedium': '#130846',
-        'textLight': '#7561d9'
+        'textLight': '#7561d9',
+        'darkBgLight': '#313131',
+        'darkBgMedium': '#131313',
+        
   
       },
      

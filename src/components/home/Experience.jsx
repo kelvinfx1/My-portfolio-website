@@ -26,7 +26,7 @@ function Experience() {
     },
   ];
   return (
-    <section className="text-textMedium relative" id="experience">
+    <section className="text-textMedium dark:text-white relative bg-white dark:bg-darkBgLight" id="experience">
       {/* Floating Text 👇 */}
        <p className="hidden lg:block absolute top-[400px] -left-28 rotate-90 text-7xl font-semibold italic opacity-5">Experience</p>
       {/* Floating Text ☝ */}
@@ -34,13 +34,13 @@ function Experience() {
       <div className="container mx-auto px-6 py-28">
         {/* <p className="">Experience</p> */}
 
-        <p className="text-4xl pb-10 md:text-5xl">
+        <p className="text-4xl pb-10 md:text-5xl text-textMedium dark:text-textLight">
           Experience
         </p>
 
         <div className="lg:px-48" data-aos = "fade-right">
           {experienceData.map((experience, index) => (
-            <div key={index} className="border-t-[0.2px] border-textMedium py-5 lg:py-10">
+            <div key={index} className="border-t-[0.2px] border-borderColor py-5 lg:py-10">
               <div>
                 <p className="sm:text-2xl">{experience.title}</p>
                 <p className="text-end text-sm md:text-lg" style={{lineHeight: "0"}}>{`@${experience.pow}`}</p>

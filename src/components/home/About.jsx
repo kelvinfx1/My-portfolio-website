@@ -10,7 +10,7 @@ function About() {
 
   return (
     <section
-      className="text-center flex justify-center py-20 md:py-28 bg-altBg z-10 relative"
+      className="text-center flex justify-center py-20 md:py-28 bg-altBg dark:bg-darkBgMedium z-10 relative"
       id="about"
     >
       {/* Floating text 👇*/}
@@ -19,15 +19,15 @@ function About() {
       </p>
       {/* Floating text ☝*/}
 
-      <div className=" bg-white shadow-lg px-2 xl:px-20 rounded-md max-w-[93%] sm:w-[90%] md:max-w-[85%] lg:max-w-[80%] 2xl:max-w-[68%]">
+      <div className=" bg-white dark:bg-darkBgLight shadow-lg px-2 xl:px-20 rounded-md max-w-[93%] sm:w-[90%] md:max-w-[85%] lg:max-w-[80%] 2xl:max-w-[68%]">
         <div className="px-3 pt-12 sm:px-9 md:px-16">
           <div>
-            <p className="text-xl text-textMedium font-semibold underline">
+            <p className="text-xl text-textMedium dark:text-textLight font-semibold underline">
               {" "}
               ABOUT MYSELF
             </p>
             <p
-              className="py-5 text-2xl font-normal md:text-3xl lg:5xl"
+              className="py-5 text-2xl font-normal md:text-3xl lg:5xl dark:text-white"
               data-aos="fade-up"
             >
               Hello! Thank you once again for making out time to visit my
@@ -38,7 +38,7 @@ function About() {
             <a
               href={resume}
               download={resume}
-              className="text-xl btn btn-lg btn-wide rounded-none bg-textLight text-white hover:bg-white hover:text-textLight hover:border-textLight"
+              className="text-xl btn btn-lg border-textLight btn-wide rounded-none bg-textLight text-white hover:bg-white hover:text-textLight hover:border-textLight"
               data-aos="fade-up"
             >
               Hire Me
@@ -60,58 +60,58 @@ function About() {
           data-aos="fade-up"
         >
           <div>
-            <p className="text-start font-medium">Figma</p>
+            <p className="text-start font-medium dark:text-white">Figma</p>
             <div className="rounded-xl bg-altBgMedium mt-3">
-              <div className="bg-textLight w-[60%] py-1 rounded-xl"></div>
+              <div className="bg-textLight w-[80%] py-1 rounded-xl"></div>
             </div>
           </div>
 
           <div>
-            <p className="text-start font-medium">HTML</p>
+            <p className="text-start font-medium dark:text-white">HTML</p>
             <div className="rounded-xl bg-altBgMedium mt-2">
               <div className="bg-textLight w-[96%] py-1 rounded-xl"></div>
             </div>
           </div>
 
           <div>
-            <p className="text-start font-medium">CSS</p>
+            <p className="text-start font-medium dark:text-white">CSS</p>
+            <div className="rounded-xl bg-altBgMedium mt-2">
+              <div className="bg-textLight w-[96%] py-1 rounded-xl"></div>
+            </div>
+          </div>
+
+          <div>
+            <p className="text-start font-medium dark:text-white">Tailwind</p>
             <div className="rounded-xl bg-altBgMedium mt-2">
               <div className="bg-textLight w-[90%] py-1 rounded-xl"></div>
             </div>
           </div>
 
           <div>
-            <p className="text-start font-medium">Tailwind</p>
+            <p className="text-start font-medium dark:text-white">SCSS</p>
             <div className="rounded-xl bg-altBgMedium mt-2">
               <div className="bg-textLight w-[80%] py-1 rounded-xl"></div>
             </div>
           </div>
 
           <div>
-            <p className="text-start font-medium">SCSS</p>
+            <p className="text-start font-medium dark:text-white">Javascript</p>
             <div className="rounded-xl bg-altBgMedium mt-2">
-              <div className="bg-textLight w-[75%] py-1 rounded-xl"></div>
+              <div className="bg-textLight w-[80%] py-1 rounded-xl"></div>
             </div>
           </div>
 
           <div>
-            <p className="text-start font-medium">Javascript</p>
+            <p className="text-start font-medium dark:text-white">Typscript</p>
             <div className="rounded-xl bg-altBgMedium mt-2">
-              <div className="bg-textLight w-[75%] py-1 rounded-xl"></div>
+              <div className="bg-textLight w-[86%] py-1 rounded-xl"></div>
             </div>
           </div>
 
           <div>
-            <p className="text-start font-medium">Typscript</p>
+            <p className="text-start font-medium dark:text-white">React.js</p>
             <div className="rounded-xl bg-altBgMedium mt-2">
-              <div className="bg-textLight w-[55%] py-1 rounded-xl"></div>
-            </div>
-          </div>
-
-          <div>
-            <p className="text-start font-medium">React.js</p>
-            <div className="rounded-xl bg-altBgMedium mt-2">
-              <div className="bg-textLight w-[75%] py-1 rounded-xl"></div>
+              <div className="bg-textLight w-[85%] py-1 rounded-xl"></div>
             </div>
           </div>
         </div>

@@ -1,32 +1,30 @@
-import { useEffect, useState } from "react";
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import Header from "./components/home/Header";
-import Hero from "./components/home/Hero";
-import About from "./components/home/About";
-import Experience from "./components/home/Experience";
-import Footer from "./components/home/Footer";
-import Portfolio from "./components/home/Portfolio";
-import MeCard from "./components/home/MeCard";
-import Gallery from "./components/Gallery";
-import SpalshScreen from "./components/SpalshScreen";
+import { createContext, useState } from "react";
+import "aos/dist/aos.css";
+import Layout from "./components/Layout";
+
+export const MyContext = createContext();
 
 function App() {
-  
+
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    // if (darkMode === false) {
+    //   setDarkMode(true)
+    // } else if (darkMode === true) {
+    //   setDarkMode(false)
+    // }
+  };
+
   return (
     <>
-      <section className="w-full bg-white overflow-x-hidden">
-        <SpalshScreen />
-        <Header />
-        <Hero />
-        <About />
-        <Experience />
-        <Portfolio />
-        <MeCard />
-        <Gallery />
-        <Footer />
-
-      </section>
+      <MyContext.Provider value={toggleDarkMode}>
+        <section className={`${darkMode && "dark"}`}>
+          
+          <Layout />
+        </section>
+      </MyContext.Provider>
     </>
   );
 }
