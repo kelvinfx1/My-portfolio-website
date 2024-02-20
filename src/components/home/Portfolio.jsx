@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import projectOne from "../../assets/portfolioSite-img.png";
-import projectTwo from "../../assets/rest-countries-image.png";
-import projectThree from "../../assets/innovate-project.png";
+import projectOne from "../../assets/my-Portfolio-project.png";
+import projectTwo from "../../assets/rest-countries-project.png";
+import projectThree from "../../assets/innovateSpace-project.png";
 import linkIcon from "../../assets/icons/link-icon.svg";
 import githubIcon from "../../assets/icons/github-black.svg";
 import MeCard from "../features/portfolio/MeCard";
@@ -15,7 +15,7 @@ function Portfolio() {
       header: "My Portfolio Website",
       description:
         " My Portfolio Website pretty much the same website you are on at the moment. I guess it's all part of what I've built after all",
-      technologies: ["React", "Next js", "Daist UI"],
+      technologies: ["React", "Tailwind", "Daist UI"],
       siteLink: "https://osorachukwu.vercel.app/",
       githubLink: "https://github.com/Osorachukwu/my-portfolio-website.git",
       githubIcon: githubIcon,
@@ -27,7 +27,7 @@ function Portfolio() {
       header: "Rest Countries App",
       description:
         "This is a challenge from frontend mentor. The web app basically fetches a list of countries via an API call and then displays the information to the user with the ability to sort, search and also toggle theme.",
-      technologies: ["React", "Next js", "Daist UI"],
+      technologies: ["React", "Tailwind", "Daist UI"],
       siteLink: "https://rest-countries-six-sigma.vercel.app/",
       githubLink:
         "https://github.com/Osorachukwu/rest-countries-api-with-color-theme-switcher.git",
@@ -40,7 +40,7 @@ function Portfolio() {
       header: "Innovate space client project website",
       description:
         "One of the official website for Innovate space software development firm. The website features a kind of vintage design with a smooth feel and look.",
-      technologies: ["React", "Next js", "Typescript"],
+      technologies: ["React", "Tailwind", "Next js", "Typescript"],
       siteLink: "https://innovate-space.vercel.app/",
       githubLink: null,
       githubIcon: null,
@@ -58,7 +58,7 @@ function Portfolio() {
       id="portfolio"
     >
       {/* Floating text 👇*/}
-      <p className="hidden lg:block absolute top-[450px] -left-64 rotate-90 text-7xl font-semibold italic opacity-5" style={{letterSpacing: '25px'}}>
+      <p className="hidden lg:block absolute top-[450px] -left-64 rotate-90 text-7xl font-semibold italic opacity-5 dark:text-white" style={{letterSpacing: '25px'}}>
         Portfolio
       </p>
       {/* Floating text ☝*/}

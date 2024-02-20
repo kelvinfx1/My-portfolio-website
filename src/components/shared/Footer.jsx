@@ -17,7 +17,7 @@ function Footer() {
   return (
     <section className="text-textMedium relative" id="footer">
       {/* Floating text 👇*/}
-      <p className="hidden lg:block absolute top-20 -left-6 rotate-90 text-7xl font-semibold italic z-10 opacity-5 ">
+      <p className="hidden lg:block absolute top-44 -left-6 rotate-90 text-7xl font-semibold italic z-10 opacity-5 dark:text-white" style={{letterSpacing: '10px'}}>
         Hire
       </p>
       {/* Floating text ☝*/}
@@ -65,10 +65,10 @@ function Footer() {
           </p>
 
           <div className="pt-3">
-            <ul className="flex gap-10">
-              <li>
-                <a href="tel:+2348100298300">
-                  <img src={teleIcon} alt="" className="w-8" />
+            <ul className="flex gap-5 lg:gap-10">
+            <li>
+                <a href="https://wa.link/dn3xxv" target="_black">
+                  <img src={whatsappIcon} alt="" className="w-8" />
                 </a>
               </li>
               <li>
@@ -86,8 +86,8 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://wa.link/dn3xxv" target="_black">
-                  <img src={whatsappIcon} alt="" className="w-8" />
+                <a href="tel:+2348100298300">
+                  <img src={teleIcon} alt="" className="w-8" />
                 </a>
               </li>
             </ul>

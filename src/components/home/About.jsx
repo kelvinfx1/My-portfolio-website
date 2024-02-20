@@ -14,7 +14,7 @@ function About() {
       id="about"
     >
       {/* Floating text 👇*/}
-      <p className="hidden lg:block absolute top-32 -left-14 rotate-90 text-7xl font-semibold italic opacity-5">
+      <p className="hidden lg:block absolute top-60 -left-14 rotate-90 text-7xl font-semibold italic opacity-5 dark:text-white">
         About
       </p>
       {/* Floating text ☝*/}

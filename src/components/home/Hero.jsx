@@ -9,10 +9,10 @@ function Hero() {
   return (
     <>
     {/* 👇 I used this div below to create a space btwn the header and the hero */}
-      <div className="h-20 hidden lg:block" />
+      <div className="h-24 hidden lg:block" />
       <section className="pt-14 md:pt-0 lg:h-[80vh] xl:h-[90vh] relative z-0 bg-white dark:bg-darkBgLight">
         {/* Floating text 👇*/}
-        <p className="hidden lg:block absolute top-32 -left-12 rotate-90 text-7xl font-semibold italic text-altBg">
+        <p className="hidden lg:block absolute top-32 -left-12 rotate-90 text-7xl font-semibold italic opacity-5 dark:text-white">
           Osora
         </p>
         {/* Floating text ☝*/}
