@@ -2,20 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   /* @apply transition-colors duration-200; */
-
 }
 
-html, body {
+html,
+body {
   min-width: 350px;
-  font-family: 'Lucida Grande', 'Lucida Sans', Arial;
-
+  font-family: "Lucida Grande", "Lucida Sans", Arial;
 }
-
 
 /* .container {
   width: 100%;
@@ -30,29 +30,26 @@ html, body {
 /* rgb(31,31,31) */
 
 .hero {
-  font-family:'Times New Roman', Times, serif ;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .right-anime {
-    animation-name: moveInRight;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    color: #e4e1f3;
-
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  color: #e4e1f3;
 }
 .left-anime {
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    animation-delay: 2s;
-
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
 }
 
 .buttom-anime {
   animation-name: moveInBottom;
   animation-duration: 1s;
   animation-timing-function: ease-out;
-
 }
 
 /* .container {
@@ -84,50 +81,47 @@ html, body {
   }
 } */
 
-
 @keyframes moveInLeft {
   0% {
-      opacity: 0;
-      transform:  translateX(-100px);
+    opacity: 0;
+    transform: translateX(-100px);
   }
 
-  80%{ 
-      transform: translate(10px);
+  80% {
+    transform: translate(10px);
   }
 
   100% {
-      opacity: 1;
-      transform: translate(0);
+    opacity: 1;
+    transform: translate(0);
   }
-
 }
 
 @keyframes moveInRight {
   0% {
-      opacity: 0;
-      transform:  translateX(100px);
+    opacity: 0;
+    transform: translateX(100px);
   }
 
-  80%{ 
-      transform: translate(-10px);
+  80% {
+    transform: translate(-10px);
   }
 
   100% {
-      opacity: 1;
-      transform: translate(0);
+    opacity: 1;
+    transform: translate(0);
   }
-
 }
 
 @keyframes moveInBottom {
   0% {
-      opacity: 0;
-      transform: translateY(30px);
+    opacity: 0;
+    transform: translateY(30px);
   }
-  
+
   100% {
-      opacity: 1;
-      transform: translate(0);
+    opacity: 1;
+    transform: translate(0);
   }
 }
 
@@ -136,20 +130,64 @@ html, body {
   animation-duration: 5s;
   animation-timing-function: ease-out;
 }
- @keyframes animista {
+@keyframes animista {
   0% {
     transform: scale(1);
   }
-  
-  80% {
-    transform: scale(5)
 
+  80% {
+    transform: scale(5);
   }
   100% {
-    transform: scale(0)
+    transform: scale(0);
   }
- }
+}
 
+.glitch {
+  position: relative;
+  display: inline-block;
+  animation: glitch 5s infinite;
+  /* animation-delay: 5s; */
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+
+  25% {
+    transform: translate(0);
+  }
+
+  45% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translate(-5px, 5px);
+  }
+  55% {
+    transform: translate(5px, -5px);
+  }
+  60% {
+    transform: translate(-5px, 5px);
+  }
+
+  65% {
+    transform: translate(0);
+  }
+
+  75% {
+    transform: translate(0);
+  }
+
+  80% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 /* Infinite animation */
@@ -193,7 +231,6 @@ html, body {
     transform: translateX(-100%);
   }
 } */
-
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx */
 /* .carousel-container {

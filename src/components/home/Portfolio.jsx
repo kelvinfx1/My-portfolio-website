@@ -11,17 +11,16 @@ import MeCard from "../features/portfolio/MeCard";
 function Portfolio() {
   const projectsDetails = [
     {
-      image: projectOne,
-      header: "My Portfolio Website",
+      image: projectThree,
+      header: "Innovate space client project website",
       description:
-        " My Portfolio Website pretty much the same website you are on at the moment. I guess it's all part of what I've built after all",
-      technologies: ["React", "Tailwind", "Daist UI"],
-      siteLink: "https://osorachukwu.vercel.app/",
-      githubLink: "https://github.com/Osorachukwu/my-portfolio-website.git",
-      githubIcon: githubIcon,
+        "One of the official website for Innovate space software development firm. The website features a kind of vintage design with a smooth feel and look.",
+      technologies: ["React", "Tailwind", "Next js", "Typescript"],
+      siteLink: "https://innovate-space.vercel.app/",
+      githubLink: null,
+      githubIcon: null,
       linkIcon: linkIcon,
     },
-
     {
       image: projectTwo,
       header: "Rest Countries App",
@@ -34,18 +33,18 @@ function Portfolio() {
       githubIcon: githubIcon,
       linkIcon: linkIcon,
     },
-
     {
-      image: projectThree,
-      header: "Innovate space client project website",
+      image: projectOne,
+      header: "My Portfolio Website",
       description:
-        "One of the official website for Innovate space software development firm. The website features a kind of vintage design with a smooth feel and look.",
-      technologies: ["React", "Tailwind", "Next js", "Typescript"],
-      siteLink: "https://innovate-space.vercel.app/",
-      githubLink: null,
-      githubIcon: null,
+        " My Portfolio Website pretty much the same website you are on at the moment. I guess it's all part of what I've built after all",
+      technologies: ["React", "Tailwind", "Daist UI"],
+      siteLink: "https://osorachukwu.vercel.app/",
+      githubLink: "https://github.com/Osorachukwu/my-portfolio-website.git",
+      githubIcon: githubIcon,
       linkIcon: linkIcon,
-    },
+    }
+
   ];
 
   useEffect(() => {
@@ -92,7 +91,7 @@ function Portfolio() {
               </div>
 
               {/* 👇Links */}
-              <div className="flex gap-5 pt-3 lg:justify-end lg:gap-10 ">
+              <div className="flex gap-5 pt-3 lg:justify-end">
                 <a href={project.githubLink} target="_blank">
                   <img src={project.githubIcon} alt="" className="w-6" />
                 </a>

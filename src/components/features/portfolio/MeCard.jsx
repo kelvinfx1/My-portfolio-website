@@ -40,7 +40,8 @@ function MeCard() {
           </div>
         </div>
       </div>
-      <div className="gap-4 absolute top-24 right-80 hidden md:block">
+      {/* 👇 Dotted background noise 👇*/}
+      <div className="gap-4 absolute top-24 right-80 hidden md:block animate-pulse">
          
          <img src={dottedBg} alt="" />
         

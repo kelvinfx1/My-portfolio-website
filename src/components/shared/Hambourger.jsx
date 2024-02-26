@@ -45,6 +45,7 @@ const toggleDarkMode = useContext(MyContext);
             <li>
               <a href="#footer">Contact</a>
             </li>
+           
 
             {/* 👇 ThemeSwitcher Button 👇*/}
             <div className="flex mt-4 pl-4">

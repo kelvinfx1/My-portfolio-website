@@ -1,13 +1,8 @@
 import React, { useEffect } from "react";
-import linkedinIcon from "../../assets/icons/linkedin.svg";
-import teleIcon from "../../assets/icons/tele.svg";
-import whatsappIcon from "../../assets/icons/whatsapp.svg";
-import githubIcon from "../../assets/icons/github.svg";
-// import chevronUp from '../../assets/icons/chevron-up.svg'
+import { FaWhatsapp, FaLinkedin, FaGithub, FaPhone } from 'react-icons/fa';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-// import Form from "../Form";
 
 function Footer() {
   useEffect(() => {
@@ -22,12 +17,7 @@ function Footer() {
       </p>
       {/* Floating text ☝*/}
 
-      {/* Back to to button💥💥👇 */}
-      {/* <div className="bg-textLight h-10 w-10 rounded-full flex justify-center items-center">
-        <a href="#home">
-          <img src={chevronUp} alt="" className="w-full h-full" />
-        </a>
-      </div> */}
+     
       <div className="mx-auto dark:text-white">
         {/* First section👇 */}
         <div className="bg-altBg py-24 px-8 dark:bg-darkBgLight" data-aos="fade-up">
@@ -49,7 +39,7 @@ function Footer() {
 
           <div className="flex justify-center mt-5">
             <a
-              href="mailto:oezewi@gmail.com"
+              href="mailto:osorachukwu.ezewi@gmail.com"
               className="btn rounded-none text-xl text-white bg-textLight border-textLight hover:text-textLight hover:bg-white hover: hover:border hover:border-textLight"
             >
               Fire me an email
@@ -58,7 +48,6 @@ function Footer() {
         </div>
 
         {/* Second section👇 */}
-
         <div className="flex flex-col items-center py-24 font-medium px-6">
           <p className="pb-10 px-5 text-center sm:px-1">
             Designed and Built by Osorachukwu &copy;2024
@@ -68,7 +57,7 @@ function Footer() {
             <ul className="flex gap-5 lg:gap-10">
             <li>
                 <a href="https://wa.link/dn3xxv" target="_black">
-                  <img src={whatsappIcon} alt="" className="w-8" />
+                <FaWhatsapp size={30} className="text-textLight" />
                 </a>
               </li>
               <li>
@@ -76,20 +65,20 @@ function Footer() {
                   href="http://www.linkedin.com/in/ezewi-osorachukwu"
                   target="_blank"
                 >
-                  <img src={linkedinIcon} alt="" className="w-8" />
+                 <FaLinkedin  size={30} className="text-textLight" />
                 </a>
               </li>
-
               <li>
                 <a href="https://github.com/Osorachukwu" target="_blank">
-                  <img src={githubIcon} alt="" className="w-8" />
+                  <FaGithub size={30} className="text-textLight"/>
                 </a>
               </li>
               <li>
                 <a href="tel:+2348100298300">
-                  <img src={teleIcon} alt="" className="w-8" />
+                  <FaPhone size={25} className="text-textLight rotate-90"/>
                 </a>
               </li>
+              
             </ul>
           </div>
         </div>

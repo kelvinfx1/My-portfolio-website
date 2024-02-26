@@ -17,13 +17,14 @@ function Hero() {
         </p>
         {/* Floating text ☝*/}
 
+
         <div className="container mx-auto px-4 md:flex h-full">
           {/* First column 👇*/}
           <div className="flex flex-col justify-end pt-24 pb-6 lg:justify-center xl:justify-end xl:pb-20 md:w-[50%] lg:pl-24 md:font-medium">
             {/* Texts container 👇*/}
             <div className="left-anime text-textMedium dark:text-white">
               <p className="text-textLight">Hi, my name is</p>
-              <p className="font-medium text-5xl my-5 md:text-6xl lg:font-bold">
+              <p className="font-medium text-5xl my-5 md:text-6xl lg:font-bold glitch">
                 Osorachukwu <br />
                 Ezewi{" "}
               </p>
