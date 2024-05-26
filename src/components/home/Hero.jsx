@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import myPhoto from "../../assets/osorachukwuMain.png";
+import myPhoto from "../../assets/my-porto-removebg-preview.png"
 import dottedBg from "../../assets/icons/bg-dottedsmall.svg";
 // import bricks from '../../assets/icons/rectangleBg.svg'
-import resume from "../../assets/docs/osorachukwu-ezewi-cv.pdf";
+import resume from "../../assets/docs/zephy.pdf";
 import Logo from "../Logo";
 
 function Hero() {
@@ -13,7 +13,7 @@ function Hero() {
       <section className="pt-14 md:pt-0 lg:h-[80vh] xl:h-[90vh] relative z-0 bg-white dark:bg-darkBgLight">
         {/* Floating text 👇*/}
         <p className="hidden lg:block absolute top-32 -left-12 rotate-90 text-7xl font-semibold italic opacity-5 dark:text-white">
-          Osora
+          ZEphyr
         </p>
         {/* Floating text ☝*/}
 
@@ -23,10 +23,10 @@ function Hero() {
           <div className="flex flex-col justify-end pt-24 pb-6 lg:justify-center xl:justify-end xl:pb-20 md:w-[50%] lg:pl-24 md:font-medium">
             {/* Texts container 👇*/}
             <div className="left-anime text-textMedium dark:text-white">
-              <p className="text-textLight">Hi, my name is</p>
+              <p className="text-textLight text-xl font-bold">Hi, my name is</p>
               <p className="font-medium text-5xl my-5 md:text-6xl lg:font-bold glitch">
-                Osorachukwu <br />
-                Ezewi{" "}
+                Somtochukwu <br />
+                Nwabueze(Zephyr){" "}
               </p>
               <p>
                 I'm a Frontend Web Developer experienced in building Industry
@@ -45,7 +45,7 @@ function Hero() {
             </div>
           </div>
           {/* Second column 👇*/}
-          <div className="h-full hidden md:block z-30 ">
+          <div className="h-full hidden md:block z-30 ml-[100px] ">
             <img src={myPhoto} alt="" className="h-full hover:grayscale" />
           </div>
 
@@ -57,7 +57,7 @@ function Hero() {
           </div>
            {/* hover:bg-[#e4e1f3] */}
 
-          <div className="absolute w-20 bottom-80 left-[600px]">
+          <div className="absolute w-20 bottom-80 left-[550px]">
             <img src={dottedBg} alt="" className="animate-pulse" />
           </div>
         </div>

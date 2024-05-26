@@ -9,21 +9,15 @@ function Experience() {
    }, []);
 
   const experienceData = [
-    {
-      title: "Software Engineer(contract)",
-      pow: "Innovatespace",
-      duration: "October 2020 - Present",
-      'description-one': "  Part time Code instructor and mentorship program at the software training academy ",
-      'description-two': "Paticipated in building of one of the company's websites one of the company website, with the rest of the dev team.",
+    {title:"Frontend web Developer Trainee",
+      pow: "Innovatespace acedemy",
+      duration: "february 2024 - june 2024",
+      'description-one': " completed an intensive training program in frontend web development, covering HTML,CSS,Javascript,typscript and popular frameworks like React,tailwind. ",
+      'description-two': "Built multiple projects , including a responsive website ,a single-page application , and mobile-friendly website, demonstrating proficiency in:HTML5, CSS3,and Javascript(ES6+).",
+      'description-three':"collaborated with fellow Trainees on groop project, honing teamwork and communication skills.",
+      'description-four':"participated in code reviews , receiving constructive feedback and iterating on improvements."
     },
 
-    {
-      title: "UI Designer(Intern)",
-      pow: "Clarion Technologies",
-      duration: "June 2019 -  December 2020",
-      'description-one': " Participated in user reasearches, designing of low and high-fidelity prototypes for a series of web and mobile App projects. ",
-      
-    },
   ];
   return (
     <section className="text-textMedium dark:text-white relative bg-white dark:bg-darkBgLight" id="experience">
@@ -45,10 +39,16 @@ function Experience() {
                 <p className="sm:text-2xl">{experience.title}</p>
                 <p className="text-end text-sm md:text-lg" style={{lineHeight: "0"}}>{`@${experience.pow}`}</p>
                 <p className="py-4 text-textLight text-lg">{experience.duration}</p>
-              </div>
-              <ul>
-                <li className="mb-3">{experience["description-one"]}</li>
-                <li>{experience["description-two"]}</li>
+              </div >
+              <ul className="text-xl flex flex-col gap-7">
+                <hr />
+                <li className="mb-3"> <span className="font-extrabold text-3xl">*</span>{experience["description-one"]}</li>
+                <hr />
+                <li><span className="font-extrabold text-3xl">*</span>{experience["description-two"]}</li>
+                <hr />
+                <li><span className="font-extrabold text-3xl">*</span>{experience["description-three"]}</li>
+                <hr />
+                <li><span className="font-extrabold text-3xl">*</span>{experience["description-four"]}</li>
                 {/* ☝the square brackets is cos I wrapped the keys in qoutes */}
               </ul>
             </div>

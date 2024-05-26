@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import projectOne from "../../assets/my-Portfolio-project.png";
+import projectOne from "../../assets/my-port-pro.png";
 import projectTwo from "../../assets/rest-countries-project.png";
-import projectThree from "../../assets/innovateSpace-project.png";
+import projectThree from "../../assets/project-two.png";
 import linkIcon from "../../assets/icons/link-icon.svg";
 import githubIcon from "../../assets/icons/github-black.svg";
 import MeCard from "../features/portfolio/MeCard";
@@ -12,11 +12,11 @@ function Portfolio() {
   const projectsDetails = [
     {
       image: projectThree,
-      header: "Innovate space client project website",
+      header: "A Travel list",
       description:
-        "One of the official website for Innovate space software development firm. The website features a kind of vintage design with a smooth feel and look.",
-      technologies: ["React", "Tailwind", "Next js", "Typescript"],
-      siteLink: "https://innovate-space.vercel.app/",
+        "a kinda to-do list web app.it is actually one of the project i built during my training  ",
+      technologies: ["React", "CSS", "Javascript", ""],
+      siteLink: null,
       githubLink: null,
       githubIcon: null,
       linkIcon: linkIcon,
@@ -26,10 +26,9 @@ function Portfolio() {
       header: "Rest Countries App",
       description:
         "This is a challenge from frontend mentor. The web app basically fetches a list of countries via an API call and then displays the information to the user with the ability to sort, search and also toggle theme.",
-      technologies: ["React", "Tailwind", "Daist UI"],
-      siteLink: "https://rest-countries-six-sigma.vercel.app/",
-      githubLink:
-        "https://github.com/Osorachukwu/rest-countries-api-with-color-theme-switcher.git",
+      technologies: ["React", "Tailwind", "Daisy UI"],
+      siteLink: null,
+      githubLink:null,
       githubIcon: githubIcon,
       linkIcon: linkIcon,
     },
@@ -38,9 +37,9 @@ function Portfolio() {
       header: "My Portfolio Website",
       description:
         " My Portfolio Website pretty much the same website you are on at the moment. I guess it's all part of what I've built after all",
-      technologies: ["React", "Tailwind", "Daist UI"],
-      siteLink: "https://osorachukwu.vercel.app/",
-      githubLink: "https://github.com/Osorachukwu/my-portfolio-website.git",
+      technologies: ["React","javascript",   "Tailwind", "Daisy UI"],
+      siteLink: null,
+      githubLink: null,
       githubIcon: githubIcon,
       linkIcon: linkIcon,
     }
@@ -48,7 +47,7 @@ function Portfolio() {
   ];
 
   useEffect(() => {
-    Aos.init({ duration: 400 });
+    Aos.init({ duration: 500 });
   }, []);
 
   return (
@@ -71,14 +70,15 @@ function Portfolio() {
           <div key={index} className="w-full shadow-2xl lg:shadow-none" data-aos="fade-up">
             {/* Project img👇 */}
             <div className="lg:max-w-[650px]">
-              <img src={project.image} alt="" className="h-full w-full " />
+              <img src={project.image} alt="" className="h-full w-full rounded-3xl " /> 
+              {/* ☝images */}
             </div>
 
             {/* Description👇 */}
             <div className="text-textMedium dark:text-white px-3 py-5 lg:text-end lg:absolute lg:pl-10 lg:top-24 lg:right-0 lg:rounded-md lg:w-[40%] xl:right-36 2xl:right-60 3xl:right-80">
               <div className="">
                 <p className="font-bold dark:text-white">{project.header}</p>
-                <p className="my-2 lg:bg-altBgMedium lg:dark:bg-darkBgMedium lg:font-medium lg:shadow-lg lg:py-3 rounded-md lg:rounded-md lg:pr-6 2xl:pr-3">
+                <p className="my-2 lg:bg-altBgMedium lg:dark:bg-darkBgMedium lg:font-medium lg:shadow-lg lg:py-3 rounded-md lg:rounded-xl lg:pr-6 2xl:pr-3">
                   {project.description}
                 </p>
               </div>

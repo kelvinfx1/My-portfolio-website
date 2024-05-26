@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import resume from "../../assets/docs/osorachukwu-ezewi-cv.pdf";
+import resume from "../../assets/docs/zephy.pdf"
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -31,9 +31,9 @@ function About() {
               data-aos="fade-up"
             >
               Hello! Thank you once again for making out time to visit my
-              personal portfolio. My name is Ezewi Osorachukwu, I&#39;m a very
+              personal portfolio. My name is Nwabueze Somtochukwu, I&#39;m a very
               dedicated and astute software engineer with the ambition for
-              mental and moral distinction.
+              mental and moral distinction. Highly motivated and detail-oriented Frontend web developer.
             </p>
             <a
               href={resume}
@@ -60,9 +60,9 @@ function About() {
           data-aos="fade-up"
         >
           <div>
-            <p className="text-start font-medium dark:text-white">Figma</p>
+            <p className="text-start font-medium dark:text-white">Next.js</p>
             <div className="rounded-xl bg-altBgMedium mt-3">
-              <div className="bg-textLight w-[80%] py-1 rounded-xl"></div>
+              <div className="bg-textLight w-[40%] py-1 rounded-xl"></div>
             </div>
           </div>
 
@@ -76,21 +76,21 @@ function About() {
           <div>
             <p className="text-start font-medium dark:text-white">CSS</p>
             <div className="rounded-xl bg-altBgMedium mt-2">
-              <div className="bg-textLight w-[96%] py-1 rounded-xl"></div>
+              <div className="bg-textLight w-[90%] py-1 rounded-xl"></div>
             </div>
           </div>
 
           <div>
             <p className="text-start font-medium dark:text-white">Tailwind</p>
             <div className="rounded-xl bg-altBgMedium mt-2">
-              <div className="bg-textLight w-[90%] py-1 rounded-xl"></div>
+              <div className="bg-textLight w-[89%] py-1 rounded-xl"></div>
             </div>
           </div>
 
           <div>
             <p className="text-start font-medium dark:text-white">SCSS</p>
             <div className="rounded-xl bg-altBgMedium mt-2">
-              <div className="bg-textLight w-[80%] py-1 rounded-xl"></div>
+              <div className="bg-textLight w-[70%] py-1 rounded-xl"></div>
             </div>
           </div>
 
@@ -104,7 +104,7 @@ function About() {
           <div>
             <p className="text-start font-medium dark:text-white">Typscript</p>
             <div className="rounded-xl bg-altBgMedium mt-2">
-              <div className="bg-textLight w-[86%] py-1 rounded-xl"></div>
+              <div className="bg-textLight w-[76%] py-1 rounded-xl"></div>
             </div>
           </div>
 
@@ -114,6 +114,14 @@ function About() {
               <div className="bg-textLight w-[85%] py-1 rounded-xl"></div>
             </div>
           </div>
+          <div>
+              <p  className="text-start font-medium dark:text-white"> Figma</p>
+              <div  className="rounded-xl bg-altBgMedium mt-2">
+                <div  className="bg-textLight w-[45%] py-1 rounded-xl"></div>
+              </div>
+              
+              
+            </div>
         </div>
       </div>
     </section>

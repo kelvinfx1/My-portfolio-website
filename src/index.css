@@ -34,7 +34,7 @@ body {
 }
 
 .right-anime {
-  animation-name: moveInRight;
+  animation-name: moveInRights;
   animation-duration: 1s;
   animation-timing-function: ease-out;
   color: #e4e1f3;

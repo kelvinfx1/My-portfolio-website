@@ -38,9 +38,9 @@ export default {
         'altBg': '#fafbfd',
         'altBgMedium': '#d9d9d9',
         'textMedium': '#130846',
-        'textLight': '#7561d9',
-        'darkBgLight': '#313131',
-        'darkBgMedium': '#131313',
+        'textLight': '#92bfed',
+        'darkBgLight': '#020a32',
+        'darkBgMedium': '#010723',
         
   
       },

@@ -6,7 +6,7 @@ function SpalshScreen() {
   useEffect(() => {
     setTimeout(() => {
       setshowSplash(false);
-    }, 2000);
+    }, 6000);
   }, []);
 
   return (
@@ -22,8 +22,8 @@ function SpalshScreen() {
         )}
 
         {showSplash && (
-          <main className="bg-black text-textLight flex items-center justify-center min-h-screen w-full fixed top-0 z-50">
-            <p className="text-5xl font-semibold animate-bounce text-center">Osora.</p>
+          <main className="bg-darkBgLight text-textLight flex items-center justify-center min-h-screen w-full fixed top-0 z-50">
+            <p className="text-7xl font-bolder animate-bounce text-center"> kelvin.</p>
           </main>
         )}
     </>

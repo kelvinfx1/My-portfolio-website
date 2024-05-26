@@ -46,8 +46,8 @@ function Form() {
       <div className="lg:w-[40%] ">
         <div>
           <p className="text-xl font-medium mb-3">Contact Me</p>
-          <p className="mb-1">234-00-298-300</p>
-          <p className="mb-1">osorachukwu.ezewi@gmail.com</p>
+          <p className="mb-1">234-808-276-2793</p>
+          <p className="mb-1">kelvinzephyr@gmail.com</p>
         </div>
         <button className="btn btn-lg rounded-none my-5">Donwload Resume</button>
         <div className="flex gap-5 items-center mb-5">
