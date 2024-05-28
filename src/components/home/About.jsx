@@ -33,7 +33,8 @@ function About() {
               Hello! Thank you once again for making out time to visit my
               personal portfolio. My name is Nwabueze Somtochukwu, I&#39;m a very
               dedicated and astute software engineer with the ambition for
-              mental and moral distinction. Highly motivated and detail-oriented Frontend web developer.
+              mental and moral distinction. Highly motivated and detail-oriented Frontend web developer, that is
+              specialized in building FAST , RESPONSIVE and USER-FRIENDLY digital experiences. my mission is to help Busineses and Organisations establish a strong online presence, by creating websites that are both VISSUALLY APPEALING and FUNCTIONAL.
             </p>
             <a
               href={resume}
