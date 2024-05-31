@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import projectOne from "../../assets/my-port-pro.png";
-import projectTwo from "../../assets/rest-countries-project.png";
+import projectTwo from "../../assets/project-3.png";
 import projectThree from "../../assets/project-two.png";
 import linkIcon from "../../assets/icons/link-icon.svg";
 import githubIcon from "../../assets/icons/github-black.svg";
@@ -17,8 +17,8 @@ function Portfolio() {
         "a kinda to-do list web app.it is actually one of the project i built during my training  ",
       technologies: ["React", "CSS", "Javascript", ""],
       siteLink: null,
-      githubLink: null,
-      githubIcon: null,
+      githubLink: 'https://github.com/kelvinfx1/travel-todo-list',
+      githubIcon: githubIcon,
       linkIcon: linkIcon,
     },
     {
@@ -28,7 +28,7 @@ function Portfolio() {
         "This is a challenge from frontend mentor. The web app basically fetches a list of countries via an API call and then displays the information to the user with the ability to sort, search and also toggle theme.",
       technologies: ["React", "Tailwind", "Daisy UI"],
       siteLink: null,
-      githubLink:null,
+      githubLink:'https://github.com/kelvinfx1/countries-api',
       githubIcon: githubIcon,
       linkIcon: linkIcon,
     },
@@ -36,10 +36,10 @@ function Portfolio() {
       image: projectOne,
       header: "My Portfolio Website",
       description:
-        " My Portfolio Website pretty much the same website you are on at the moment. I guess it's all part of what I've built after all",
+        " My Portfolio Website pretty much the same website you are on at the moment. I guess it's all part of what I've built after all. it's a single page website.",
       technologies: ["React","javascript",   "Tailwind", "Daisy UI"],
       siteLink: null,
-      githubLink: null,
+      githubLink: 'https://github.com/kelvinfx1/My-portfolio-website.git',
       githubIcon: githubIcon,
       linkIcon: linkIcon,
     }

@@ -35,12 +35,13 @@ export default {
         'hambourger': '#4c4c4c',
         'borderColor': '#9ca3af',
         'progressBarBg': '#e5ffee',
-        'altBg': '#fafbfd',
+        'altBg': '',
         'altBgMedium': '#d9d9d9',
         'textMedium': '#130846',
         'textLight': '#92bfed',
         'darkBgLight': '#020a32',
         'darkBgMedium': '#010723',
+        'bglight':"f7f7f7"
         
   
       },

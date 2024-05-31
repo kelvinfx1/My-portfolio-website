@@ -10,7 +10,7 @@ function Hero() {
     <>
     {/* 👇 I used this div below to create a space btwn the header and the hero */}
       <div className="h-24 hidden lg:block" />
-      <section className="pt-14 md:pt-0 lg:h-[80vh] xl:h-[90vh] relative z-0 bg-white dark:bg-darkBgLight">
+      <section className="pt-14 md:pt-0 lg:h-[80vh] xl:h-[90vh] relative z-0 bg-white dark:bg-darkBgLight  ">
         {/* Floating text 👇*/}
         <p className="hidden lg:block absolute top-32 -left-12 rotate-90 text-7xl font-semibold italic opacity-5 dark:text-white">
           ZEphyr
@@ -24,7 +24,7 @@ function Hero() {
             {/* Texts container 👇*/}
             <div className="left-anime text-textMedium dark:text-white">
               <p className="text-textLight text-xl font-bold">Hi, my name is</p>
-              <p className="font-medium text-5xl my-5 md:text-6xl lg:font-bold glitch">
+              <p className="font-medium text-5xl my-5 md:text-6xl lg:font-bold glitch  ">
                 Somtochukwu <br />
                 Nwabueze(Zephyr){" "}
               </p>
@@ -45,8 +45,8 @@ function Hero() {
             </div>
           </div>
           {/* Second column 👇*/}
-          <div className="h-full hidden md:block z-30 ml-[100px] ">
-            <img src={myPhoto} alt="" className="h-full hover:grayscale" />
+          <div className="h-full hidden md:block z-30 ml-[100px]  ">
+            <img src={myPhoto} alt="" className="h-[660px] hover:grayscale  bottom-28 " />
           </div>
 
           {/*  👇Background noise */}
@@ -57,11 +57,21 @@ function Hero() {
           </div>
            {/* hover:bg-[#e4e1f3] */}
 
-          <div className="absolute w-20 bottom-80 left-[550px]">
-            <img src={dottedBg} alt="" className="animate-pulse" />
+          <div className="absolute w-30 bottom-80 left-[650px] ">
+            <img src={dottedBg} alt="" className="animate-pulse" id="dotted" />
           </div>
         </div>
+        {/* <div className="dark:bg-darkBgMedium h-20 bg-altBgMedium"></div> */}  
+        {/* ☝this was for creaating gap b/w the hero and the image☝ */}
+        <div  className="ml-[50%] translate-x-[-50%]   bg-altBg dark:bg-darkBgLight  md:hidden relative ">
+        <img src={myPhoto} alt="" id="port" className="  animate-pulse opacity-[0.9] " />
+        </div>
       </section>
+
+     
+      
+      
+      
     </>
   );
 }

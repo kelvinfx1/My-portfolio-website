@@ -10,6 +10,16 @@
   box-sizing: border-box;
   /* @apply transition-colors duration-200; */
 }
+#port{
+position: relative;
+bottom: 160px;
+left: 90px;
+  
+}
+#dotted{
+  position: relative;
+  right: 100px;
+}
 
 html,
 body {

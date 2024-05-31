@@ -7,13 +7,15 @@ import Experience from "./home/Experience";
 import Portfolio from "./home/Portfolio";
 import Footer from "./shared/Footer";
 import MeCard from "./features/portfolio/MeCard";
+import ph from '../assets/my-porto-removebg-preview.png'
 
 function Layout() {
   return (
-    <section className="w-full bg-white overflow-x-hidden">
+    <section className="w-full bg-gray-100 overflow-x-hidden">
       <SpalshScreen />
       <Header />
       <Hero />
+     
       <About />
       <Experience />
 

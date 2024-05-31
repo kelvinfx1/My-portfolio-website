@@ -60,7 +60,7 @@ function About() {
           className="text-xl font-normal px-5 pb-12 grid grid-cols-1 gap-8 sm:px-9 md:px-10 md:grid-cols-2"
           data-aos="fade-up"
         >
-          <div>
+          <div className="md:grid-column-start-1 md:grid-column-end-3">
             <p className="text-start font-medium dark:text-white">Next.js</p>
             <div className="rounded-xl bg-altBgMedium mt-3">
               <div className="bg-textLight w-[40%] py-1 rounded-xl"></div>
@@ -89,7 +89,7 @@ function About() {
           </div>
 
           <div>
-            <p className="text-start font-medium dark:text-white">SCSS</p>
+            <p className="text-start font-medium dark:text-white">SASS</p>
             <div className="rounded-xl bg-altBgMedium mt-2">
               <div className="bg-textLight w-[70%] py-1 rounded-xl"></div>
             </div>
@@ -103,7 +103,7 @@ function About() {
           </div>
 
           <div>
-            <p className="text-start font-medium dark:text-white">Typscript</p>
+            <p className="text-start font-medium dark:text-white">Typescript</p>
             <div className="rounded-xl bg-altBgMedium mt-2">
               <div className="bg-textLight w-[76%] py-1 rounded-xl"></div>
             </div>
