@@ -27,7 +27,7 @@ function Portfolio() {
       description:
         "This is a challenge from frontend mentor. The web app basically fetches a list of countries via an API call and then displays the information to the user with the ability to sort, search and also toggle theme.",
       technologies: ["React", "Tailwind", "Daisy UI"],
-      siteLink: null,
+      siteLink: 'https://countries-api-kel.vercel.app/',
       githubLink:'https://github.com/kelvinfx1/countries-api',
       githubIcon: githubIcon,
       linkIcon: linkIcon,
@@ -38,7 +38,7 @@ function Portfolio() {
       description:
         " My Portfolio Website pretty much the same website you are on at the moment. I guess it's all part of what I've built after all. it's a single page website.",
       technologies: ["React","javascript",   "Tailwind", "Daisy UI"],
-      siteLink: null,
+      siteLink: 'https://kelvin-somtochukwu.vercel.app/',
       githubLink: 'https://github.com/kelvinfx1/My-portfolio-website.git',
       githubIcon: githubIcon,
       linkIcon: linkIcon,
