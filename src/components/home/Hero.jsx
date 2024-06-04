@@ -26,7 +26,7 @@ function Hero() {
               <p className="text-textLight text-xl font-bold">Hi, my name is</p>
               <p className="font-medium text-5xl my-5 md:text-6xl lg:font-bold glitch  ">
                 Somtochukwu <br />
-                Nwabueze(Zephyr){" "}
+                Nwabueze{" "}
               </p>
               <p>
                 I'm a Frontend Web Developer experienced in building Industry
