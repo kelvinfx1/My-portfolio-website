@@ -7,6 +7,7 @@ import projectThree from "../../assets/project-two.png";
 import linkIcon from "../../assets/icons/link-icon.svg";
 import githubIcon from "../../assets/icons/github-black.svg";
 import MeCard from "../features/portfolio/MeCard";
+import projectfour from '../../assets/Airbnbproject.png';
 
 function Portfolio() {
   const projectsDetails = [
@@ -40,6 +41,17 @@ function Portfolio() {
       technologies: ["React","javascript",   "Tailwind", "Daisy UI"],
       siteLink: 'https://kelvin-somtochukwu.vercel.app/',
       githubLink: 'https://github.com/kelvinfx1/My-portfolio-website.git',
+      githubIcon: githubIcon,
+      linkIcon: linkIcon,
+    },
+    {
+      image: projectfour,
+      header: "Airbnb landing page",
+      description:
+        " This was my Capstone project with Innovate Space Acedemy, which portrays proficiency in HTML,CSS,Javascript,Typescript,React and other popular frameworks and libraries such Tailwind",
+      technologies: ["React","Typescript",   "Tailwind", "Daisy UI","swiper","lucid "],
+      siteLink: null,
+      githubLink:'https://github.com/kelvinfx1/Airbnb-home',
       githubIcon: githubIcon,
       linkIcon: linkIcon,
     }
